@@ -2,7 +2,6 @@ import pool from '../db.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
-const JWT_SECRET = 'your-secret-key'; // use a constant or move to .env later
 
 export const signup = async (req, res) => {
   const { username, password } = req.body;
